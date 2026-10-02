@@ -12,7 +12,7 @@ The design demonstrates basic memory read and write operations using RTL (Regist
 - To implement memory read and write operations.
 - To understand RTL-based hardware design.
 - To verify the design using a testbench.
-- To analyze the simulation waveform using EPWave.
+- To analyze simulation waveforms using EPWave.
 
 ## 🛠️ Technologies Used
 
@@ -44,7 +44,8 @@ The design demonstrates basic memory read and write operations using RTL (Regist
 - Synchronous read operation
 - Reset functionality
 - Functional simulation
-- Waveform generation and analysis
+- VCD waveform generation
+- Waveform analysis using EPWave
 
 ## 📂 Project Files
 
@@ -54,7 +55,11 @@ Contains the Verilog RTL design of the memory interface.
 
 ### `testbench.sv`
 
-Contains the testbench used to verify the memory write and read operations.
+Contains the testbench used to verify the memory read and write operations.
+
+### `IMG_20261002_112730.jpg`
+
+Contains the simulation waveform captured from EPWave.
 
 ## 🔄 Working Principle
 
@@ -86,19 +91,19 @@ The testbench verifies:
 - Address selection
 - Data transfer
 
-The generated VCD file was viewed using EPWave to analyze the timing behavior of the signals.
+A VCD file was generated during simulation and viewed using EPWave to analyze the timing behavior of the design.
 
 ## 📊 Simulation Waveform
 
-The waveform shows the behavior of the clock, reset, read/write control signals, address, input data, and output data during simulation.
+The following waveform shows the behavior of the clock, reset, read/write control signals, address, input data, and output data during simulation.
 
-> Add the actual EPWave screenshot here after uploading it to this repository.
+![Simulation Waveform](IMG_20261002_112730.jpg)
 
 ## 📈 Expected Result
 
 The data written into the selected memory address is successfully read back during the read operation.
 
-For example:
+Example:
 
 - Address: `3`
 - Write Data: `10101010`
@@ -127,6 +132,7 @@ Through this project, I gained practical knowledge of:
 - Memory interface design
 - Testbench development
 - Functional simulation
+- VCD waveform generation
 - Waveform analysis
 - GitHub project documentation
 
@@ -136,7 +142,7 @@ Through this project, I gained practical knowledge of:
 
 B.E. Electronics and Communication Engineering
 
-Interested in:
+### Areas of Interest
 
 - VLSI
 - Embedded Systems
@@ -145,4 +151,4 @@ Interested in:
 
 ## 🔗 Project Repository
 
-This repository contains the Verilog RTL design, testbench, and simulation-related files for the memory interface project.
+This repository contains the Verilog RTL design, testbench, and simulation waveform for the memory interface project.
